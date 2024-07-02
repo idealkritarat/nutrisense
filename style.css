@@ -1,0 +1,18 @@
+.anno-bar {
+    animation: swapAnnoucement 10s infinite;
+}
+
+@keyframes swapAnnoucement {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+}
