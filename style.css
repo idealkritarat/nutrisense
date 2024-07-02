@@ -16,3 +16,36 @@
         transform: translateY(0px);
     }
 }
+
+#infinite-logo {
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+#infinite-logo > div{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: infiniteLogoAnimation infinite linear;
+    width: max-content;
+}
+
+@keyframes infiniteLogoAnimation {
+    40% {
+        left: 100%;
+    }
+    100% {
+        left: -200px;
+    }
+}
+
+.slideIn {
+    opacity: 0%;
+    transform: translateY(100px);
+}
